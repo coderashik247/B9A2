@@ -12,6 +12,16 @@ body{
     display: flex;
     align-items: center;
 }
+.destination-section >h3, .choose-us-section>h3{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.destination-section >p, .choose-us-section>p{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 /* shared css styles ends here */
 
 /* Color sector for this site starts*/
@@ -154,16 +164,7 @@ input,select,.btn-find-now{
 .destination-section {
     margin-top: 6rem;
 }
-.destination-section >h3{
-    margin-bottom: 1rem;
-    text-align: center;
-}
-.destination-section >p{
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
+
 .row-1, .row-2, .row-3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -193,6 +194,52 @@ input,select,.btn-find-now{
     transform: translate(-50%, -50%);
 }
 /* destination-section styles ends here */
+
+/* choose-us-section styles starts here */
+.choose-us-row-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.choose-us-row-2{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+}
+.home{
+    padding: 2rem;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+}
+.home h3, .service h3,.price h3{
+    font-size: 24px;
+    font-weight: 800;
+}
+.home p, .service p, .price p{
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.home img, .service img, .price img{
+    width: 4rem;
+    height: 6rem;
+}
+.service{
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 2rem;
+    border-radius: 16px;
+}
+.price{
+    padding: 2rem;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;
+    background: rgba(233, 68, 68, 0.05);
+    margin-bottom: 10px;
+}
+/* choose-us-section styles ends here */
 
 /* Responsive for 576px */
 @media screen and (max-width:576px) {
